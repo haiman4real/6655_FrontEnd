@@ -21,7 +21,8 @@ import NewsBox from './components/NewsBox.vue';
         },
         methods:{
           async  fetchNews(){
-              const res = await fetch("https://emmaogunwobi.herokuapp.com/api")
+              const res = await fetch("http://localhost:5512/api")
+              // const res = await fetch("https://emmaogunwobi.herokuapp.com/api")
               const data = await res.json()
 
               console.log(data)
